@@ -1,0 +1,19 @@
+body{
+    max-height: 100dvh;
+    max-height: 100vh;
+
+    display: flex;
+}
+
+img{
+    max-width: 100%;
+}
+
+.hotbar{
+    height: 100vh; 
+    max-width: 65px;
+
+    display: grid;
+
+    background-color: rgb(44, 44, 44);
+}
