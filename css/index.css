@@ -6,14 +6,114 @@ body{
 }
 
 img{
-    max-width: 100%;
+    width: 100%;
 }
 
 .hotbar{
-    height: 100vh; 
-    max-width: 65px;
+    height: 100dvh;
+    height: 100vh;
+    width: 66px;
 
     display: grid;
+    text-align: center;
 
     background-color: rgb(44, 44, 44);
+    border-right: 0.5px solid rgba(255, 255, 255, 0.1);
+}
+
+.icons{
+    max-width: 100%;
+}
+
+.top{
+    padding: 0.8em;
+}
+
+.top ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.top li{
+    align-items: center;
+    padding: 5px;
+}
+
+.down{
+    padding: 0.8em;
+    display: grid;
+    align-items: end;
+}
+
+.user_avatar{
+    width: 30px;
+    border-radius: 50%;
+}
+
+.down ul{
+    display: grid;
+    gap: 1em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
+    width: 100%;
+}
+
+.contacts{
+    background-color: rgb(24, 24, 24);
+    border-right: 0.5px solid rgba(255, 255, 255, 0.1);
+
+    min-width: 330px;
+}
+
+.chat{
+    background-image: url(../img/wallpaper/Whatsapp\ by\ @dgutierrez.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
