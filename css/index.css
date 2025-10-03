@@ -1,119 +1,96 @@
-body{
+body {
     max-height: 100dvh;
     max-height: 100vh;
 
     display: flex;
 }
 
-img{
-    width: 100%;
+img {
+    max-width: 100%;
 }
 
-.hotbar{
+.hotbar {
     height: 100dvh;
     height: 100vh;
-    width: 66px;
+    max-width: 65px;
+    min-width: 65px;
 
     display: grid;
     text-align: center;
 
-    background-color: rgb(44, 44, 44);
+    background-color: rgb(34, 34, 34);
     border-right: 0.5px solid rgba(255, 255, 255, 0.1);
 }
 
-.icons{
+.hotbar hr {
+    height: 1px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.1);
+
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+}
+
+.icons {
     max-width: 100%;
 }
 
-.top{
+.icon_meta {
+    width: 21px;
+    height: 21px;
+    padding: 5px;
+
+}
+
+.user_avatar {
+    width: 30px;
+    border-radius: 50%;
+}
+
+.top {
     padding: 0.8em;
 }
 
-.top ul{
+.top ul {
     display: flex;
     flex-direction: column;
-    gap: 1em;
+    gap: 0.5em;
 }
 
-.top li{
+.top li {
     align-items: center;
     padding: 5px;
 }
 
-.down{
+.down {
     padding: 0.8em;
     display: grid;
     align-items: end;
 }
 
-.user_avatar{
-    width: 30px;
-    border-radius: 50%;
-}
-
-.down ul{
+.down ul {
     display: grid;
     gap: 1em;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-main{
-    display: grid;
-    grid-template-columns: 1fr 2.5fr;
+main {
+    display: flex;
     width: 100%;
 }
 
-.contacts{
+.contacts {
     background-color: rgb(24, 24, 24);
     border-right: 0.5px solid rgba(255, 255, 255, 0.1);
 
-    min-width: 330px;
+    min-width: 335px;
+    width: 815px;
 }
 
-.chat{
+.chat {
     background-image: url(../img/wallpaper/Whatsapp\ by\ @dgutierrez.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+
+    width: 100%;
 }
