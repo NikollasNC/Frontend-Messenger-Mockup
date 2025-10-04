@@ -1,3 +1,7 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 body {
     max-height: 100dvh;
     max-height: 100vh;
@@ -79,11 +83,75 @@ main {
 }
 
 .contacts {
+    color: white;
     background-color: rgb(24, 24, 24);
-    border-right: 0.5px solid rgba(255, 255, 255, 0.1);
 
-    min-width: 335px;
-    width: 815px;
+    border-right: 0.5px solid rgba(255, 255, 255, 0.1);
+    padding: 1em;
+
+    min-width: 305px;
+    width: 765px;
+}
+
+.contacts h1{
+    display: flex;
+    justify-items: center;
+    font-weight: bolder;
+    font-size: 1.3em;
+}
+
+.top_contacts{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em;
+}
+
+.top_contacts ul{
+    display: flex;
+    gap: 2em;
+}
+
+.contacts_search{
+    display: flex;
+    gap: 1em;
+    align-items: center;
+
+    height: 20px;
+    padding: 0.5em;
+    border: 2px solid transparent;
+    border-radius: 20em;
+    margin: 0.5em 0.2em 0.5em 0.2em;
+
+    background-color: rgb(51, 51, 51);
+}
+
+.contacts_search .icons{
+    width: 17px;
+    height: 17px;
+    margin-left: 0.5em;
+}
+
+.contacts_search input{
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 15px;
+
+    background-color: transparent;
+    color: white;
+    caret-color: rgb(81, 187, 67);
+}
+
+.contacts_search:focus-within{
+    border: 2px solid rgb(95, 185, 84);
+    background-color: transparent;
+}
+
+.options_contacts{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5em;
 }
 
 .chat {
