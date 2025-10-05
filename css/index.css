@@ -1,4 +1,4 @@
-*{
+* {
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -87,32 +87,35 @@ main {
     background-color: rgb(24, 24, 24);
 
     border-right: 0.5px solid rgba(255, 255, 255, 0.1);
-    padding: 1em;
 
     min-width: 305px;
-    width: 765px;
+    width: 810px;
 }
 
-.contacts h1{
+.contacts h1 {
     display: flex;
     justify-items: center;
     font-weight: bolder;
     font-size: 1.3em;
 }
 
-.top_contacts{
+.head_contacts {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.5em;
+    padding: 1.2em 1.2em 0em 1.2em;
 }
 
-.top_contacts ul{
+.head_contacts ul {
     display: flex;
     gap: 2em;
 }
 
-.contacts_search{
+.list_contacts{
+    padding: 1.2em;
+}
+
+.contacts_search {
     display: flex;
     gap: 1em;
     align-items: center;
@@ -121,18 +124,17 @@ main {
     padding: 0.5em;
     border: 2px solid transparent;
     border-radius: 20em;
-    margin: 0.5em 0.2em 0.5em 0.2em;
 
     background-color: rgb(51, 51, 51);
 }
 
-.contacts_search .icons{
+.contacts_search .icons {
     width: 17px;
     height: 17px;
     margin-left: 0.5em;
 }
 
-.contacts_search input{
+.contacts_search input {
     width: 100%;
     border: none;
     outline: none;
@@ -143,15 +145,36 @@ main {
     caret-color: rgb(81, 187, 67);
 }
 
-.contacts_search:focus-within{
+.contacts_search input::placeholder {
+    color: rgb(155, 155, 155);
+}
+
+.contacts_search:focus-within {
     border: 2px solid rgb(95, 185, 84);
     background-color: transparent;
 }
 
-.options_contacts{
+.options_contacts {
     display: flex;
     flex-wrap: wrap;
-    gap: 5em;
+    gap: 0.5em;
+    margin-top: 0.7em;
+    margin-bottom: 0.7em;
+}
+
+.options_contacts li {
+    padding: 0.5em 0.7em 0.5em 0.7em;
+    font-size: 15px;
+
+    border: 0.5px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10em;
+    color: rgb(155, 155, 155);
+}
+
+.options_contacts .selected {
+    border-color: rgb(90, 126, 85);
+    background-color: rgba(90, 185, 122, 0.192);
+    color: rgb(176, 219, 166);
 }
 
 .chat {
